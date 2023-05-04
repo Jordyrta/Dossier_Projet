@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    font-family: "Jost", sans-serif;
+}
+
+
+/******* Formulaire de contact *******/
+
+.section-formulaire {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    margin: 20px 0;
+    min-height: 82vh;
+}
+
+.titre-contact {
+    font-family: "Jost";
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 65px;
+}
+
+.telephone {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    width: 300px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    width: 300px;
+}
+
+.num {
+    font-family: "Jost";
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.mail {
+    font-family: "Jost";
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    outline: 4px solid #000000;
+    padding: 20px;
+}
+
+.textform {
+    outline: 2px solid #000000;
+    padding: 0;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.text {
+    font-family: "Jost";
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    height: 32px;
+    width: 200px;
+    margin: 5px 0;
+}
+
+.message {
+    outline: 2px solid #000000;
+    border: none;
+    resize: none;
+    height: 95px;
+    width: 290px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.btn_envoyer {
+    font-family: "Jost";
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    width: 175px;
+    height: 40px;
+    background: #383838;
+    outline: 3px solid #000000;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 7px #999;
+    cursor: pointer;
+}
+
+.btn_envoyer:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 376px) {
+    .nav {
+        display: none;
+    }
+
+    .topnav{
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+    
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    .topnav a {
+        color: white;
+        padding: 16px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+    
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px;
+    }
+    
+    .topnav a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 48px;
+    }
+}

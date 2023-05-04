@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+}
+
+/**************************     NavBar     **************************/
+
+.lien-accueil {
+  text-decoration: none;
+  color: #383838;
+}
+
+.nav {
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.JR-logo {
+  height: 60px;
+}
+
+.myLinks{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bars {
+  display: none;
+}
+
+.search {
+  display: flex;
+  width: 300px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #d1d1d1;
+  color: #a9a9a9;
+}
+
+.search-btn {
+  padding: 10px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  background: #383838;
+  color: #ffff;
+}
+
+.search-box::placeholder {
+  color: #a9a9a9;
+}
+
+.utilisateur img {
+  margin-left: 5px;
+  width: 30px;
+}
+
+/******* Menu Accueil ect *******/
+
+.links-container {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  font-weight: 600;
+  border-bottom: 1px solid #d1d1d1;
+  background-color: white;
+}
+
+.link {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #383838;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+/*************   Body   ***********/
+
+.fond-accueil {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fond-accueil video {
+  overflow: hidden;
+  z-index: -1;
+  margin-top: -300px;
+  height: 100%;
+  width: 100%;
+}
+
+/**********  TOP ARTICLE  ************/
+
+.top-article {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.top-cat {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin: 20px 0px;
+  font-weight: 900;
+}
+
+.cat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cat-p {
+  margin: 10px 0px;
+  font-style: "jost", "sans-serif";
+  font-weight: 900;
+}
+
+.cat-img {
+  border: 5px solid;
+  border-image: linear-gradient(to top, rgb(134, 32, 138), #e2457e) 1;
+}
+
+/********* CARROUSSEL  *********/
+
+.slider {
+  max-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Image {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 70px;
+  height: auto;
+  transition: all 0.5s;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 85px;
+}
+
+.Image img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 70px;
+  color: black;
+  background-color: transparent;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 1.5%;
+}
+
+/******  TOP CATEGORIE  ********/
+
+.doudoune {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+}
+
+.sneaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+}
+
+.pantalon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+}
+
+/******  Footer pour accueil  *******/
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-haut {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  border-top: 1px solid #d1d1d1;
+}
+
+.livraison {
+  display: flex;
+  padding: 0;
+}
+
+.logo-livraison {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.livraison li {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.livraison p {
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+/******* Catégorie Marque *******/
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  background: #555555;
+}
+
+.footer-gauche {
+  padding: 20px 30px;
+  display: flex;
+}
+
+.category {
+  display: grid;
+  row-gap: 5px;
+  column-gap: 30px;
+  grid-template-columns: auto;
+  list-style: none;
+}
+
+.category-title {
+  grid-column: span 2;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.category .footer-link {
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.footer-droite {
+  padding: 25px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 160px;
+}
+
+/******* Vrai footer *******/
+
+.logo-reseaux {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-credit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  background: #383838ca;
+}
+
+.logo-payement {
+  display: flex;
+  margin-left: 10px;
+  height: 55px;
+}
+
+/******* FAIT *******/
+
+
+.img-portrait {
+  width: 291px; 
+  height: auto;
+}
+
+.img-landscape {
+  width: 478px; 
+  height: auto;
+}
+
+/***************** Burger menu **************/
+
+.topnav{
+  display: none;
+}
+
+/***************** ADMIN AJOUT **************/
+
+.article{
+  min-height: 80vh;
+}
+
+/************ RESPONSIVE *************/
+
+@media screen and (max-width: 376px) {
+  .nav {
+    display: none;
+  }
+
+  .topnav{
+    display: block;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #bars::before {
+    content: "\f0c9";
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+  
+  .JR-logo {
+    height: 57px;
+    padding: 10px;
+  }
+
+  .fond-accueil{
+    display: none;
+  }
+
+  .search{
+    display: none;
+  }
+
+  .nav .lien-accueil {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #bars{
+    display: block;
+  }
+
+  .top-article{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  }
+
+  .slider {
+    max-height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .top-cat{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 10px;   
+  }
+
+  .cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cat p {
+    font-size: 30px;
+  }
+
+  .img-portrait{
+    width: 150px;
+    height: auto;
+  }
+
+  .img-landscape{
+    width: 200px;
+    height: auto;
+  }
+
+  .livraison {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .livraison li {
+    width: 65%;
+  }
+
+  .footer-content{
+    display: flex;
+    background: #555555;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .logo{
+    height: 100px;
+  }
+
+  .footer-droite{
+    padding: 10px 0px 0px 0px;
+  }
+
+  .footer-gauche{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category {
+    display: grid;
+    row-gap: 5px;
+    column-gap: 30px;
+    grid-template-columns: auto;
+    list-style: none;
+    justify-items: center;
+    padding: 0;
+  }
+
+  .category-title{
+    grid-column: span 2;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+
+  .footer-credit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-payement{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .credit{
+    margin-bottom: 10px;
+  }
+}
